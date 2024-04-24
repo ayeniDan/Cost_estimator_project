@@ -117,6 +117,7 @@ h1 {
 	text-transform: uppercase;
 	margin: 16px 0;
 	border-radius: 10px;
+	box-sizing: border-box;
 }
 
 .sessions_card p {
@@ -266,4 +267,32 @@ h1 {
 	left: 0;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
+}
+
+@media only screen and (max-width: 750px) {
+	.card {
+		width: 100%;
+	}
+	.card_wrapper {
+		flex-wrap: wrap-reverse;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.container {
+		padding: 0 16px;
+	}
+	body {
+		padding: 16px;
+	}
+	.sessions_card {
+		width: 100%;
+	}
+	h1 {
+		margin: 0 0 16px 0;
+	}
+	.toggle_wrapper {
+		width: 90%;
+		justify-content: space-around;
+	}
 }
